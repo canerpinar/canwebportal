@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+	<title>template title</title>
+	<meta charset="UTF-8"/>
+	<link media="screen" href="/css/index.css" type="text/css" th:href="@{/css/index.css}" rel="stylesheet"/>
+</head>
+
+
+
+<header th:fragment="header">
+<a href="/">Anasayfa</a><a href="hakkimizda">Hakkımızda</a><a href="iletisim">İletişim</a>
+This is web site.
+</header>
+
+<footer th:fragment="footer">
+      &copy; This is a custom content that you can provide
+</footer>
+
+</html>
