@@ -7,3 +7,32 @@ header{
 footer{
 	background-color: blue;
 }
+.vertical-center{
+min-height:50px;
+vertical-align: bottom;
+
+
+}
+nav ul{
+	
+	text-decoration: none;
+	list-style:none;
+
+}
+
+nav ul li{
+	float:left;
+	line-height: 150px;
+	width: 150px;
+	
+}
+nav ul li a{
+vertical-align: middle;
+	
+}
+
+
+nav{
+	margin: 0 auto;
+	vertical-align: bottom;
+}

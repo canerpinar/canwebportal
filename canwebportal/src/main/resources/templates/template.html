@@ -3,15 +3,43 @@
 <head th:fragment="head">
 	<title>template title</title>
 	<meta charset="UTF-8"/>
+	<script type="text/javascript" th:src="@{/jquery-3.2.1/jquery-3.2.1.min.js}"></script>
 	<link media="screen" href="/css/index.css" type="text/css" th:href="@{/css/index.css}" rel="stylesheet"/>
+	<link media="screen" type="text/css" th:href="@{/bootstrap-3.3.7/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+	<link media="screen" type="text/css" th:href="@{/bootstrap-3.3.7/css/bootstrap.min.css}" rel="stylesheet"/>
+	<script type="text/javascript" th:href="@{/bootstrap-3.3.7/js/bootstrap.min.js}"></script>
 </head>
 
 
 
 <header th:fragment="header">
-<a href="/">Anasayfa</a><a href="hakkimizda">Hakkımızda</a><a href="iletisim">İletişim</a>
-This is web site.
+<div class="container">
+<div class="row">
+<div class="col-md-2"><img class="img-responsive" th:src="@{/jpeg/website_logo.png}" /></div>
+<div class="col-md-10">
+	
+	<nav>
+		  
+		    <ul>
+				<th:block th:each="menu : ${menuList}">			
+						<li class=""><a th:href="${menu.path}" th:text="${menu.menuAd}"></a></li>
+				</th:block>
+		    </ul>
+		  
+</nav>
+	
+</div>
+
+
+
+
+	</div>
+</div>
+
+
 </header>
+
+
 
 <footer th:fragment="footer">
       &copy; This is a custom content that you can provide

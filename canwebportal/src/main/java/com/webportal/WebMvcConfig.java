@@ -23,6 +23,9 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		// TODO Auto-generated method stub
 		registry.addResourceHandler("/css/**").addResourceLocations("classpath:/static/css/");
+		registry.addResourceHandler("/bootstrap-3.3.7/**").addResourceLocations("classpath:/static/bootstrap-3.3.7/");
+		registry.addResourceHandler("/jquery-3.2.1/**").addResourceLocations("classpath:/static/jquery-3.2.1/");
+		registry.addResourceHandler("/jpeg/**").addResourceLocations("classpath:/static/jpeg/");
 	}
 
 	@Bean
